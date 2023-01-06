@@ -1,0 +1,181 @@
+:root {
+  --system-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@font-face {
+  font-family: norse;
+  src: url(Norse-Bold.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #7f6346;
+  background-image: url("pine_marten_on_tree.jpg");
+  background-position: center;
+  background-size: cover;
+  flex: 1 1 30%;
+  min-width: 230px;
+  min-height: 250px;
+}
+
+#logo-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 15%);
+  /* height: 200px; */
+  width: 100%;
+}
+
+#logo-panel img {
+  padding: 10px;
+  max-height: 180px;
+}
+
+#logo-panel p {
+  font-family: norse, var(--system-ui);
+  font-size: 6rem;
+  color: white;
+}
+
+
+.content{
+  display: flex;
+  flex-direction: column;
+  background-color: #F9FAFB;
+  flex: 1 1 70%;
+}
+
+.content > div {
+  flex: 1;
+  /* border: 1px solid black; */
+  padding: 2rem;
+}
+
+#description-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#form-section {
+  box-shadow: 0px 5px 12px #555;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+}
+
+#form-section p {
+  margin-bottom: 2rem;
+}
+
+.row {
+  display: flex;
+  width: 70%;
+  flex-wrap: wrap;
+  column-gap: 2em;
+  /* margin-bottom: 2rem; */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.input-group > label {
+  font-family: var(--system-ui);
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: .4rem;
+  flex: 1;
+}
+
+.input-group > input {
+  font-family: var(--system-ui);
+  font-size: 1.4rem;
+  border: 1px solid #E5E7EB;
+  flex:1;
+  padding-left: 5px;
+}
+
+.input-group > input:focus {
+  outline: 1px solid #7f6346;
+  box-shadow: 0 3px 3px #7f6346;
+}
+
+.input-group .error {
+  border: 1px solid red;
+}
+
+.btn {
+  background-color: #7f6346;
+  font-family: var(--system-ui);
+  font-size: 1.5rem;
+  padding: .8rem 2rem;
+  color: #F9FAFB;
+  border: none;
+  border-radius: .8rem;
+  box-shadow: 0px 5px 5px #555;
+  margin-bottom: 1rem;
+}
+
+#login-section p {
+  font-family: var(--system-ui);
+  font-size: 1.2rem;
+}
+
+#login-section a {
+  text-decoration:  none;
+  color: #7f6346;
+}
+
+.btn:hover  {
+  background-color: #b68f66;
+}
+
+@media screen and (max-width: 780px) {
+  .row {
+    width: 100%;
+  }
+  .btn {
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+  
+  p { 
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+  #logo-panel img {
+    max-height: 90px;
+  }
+  #logo-panel p {
+    font-size: 3rem;
+  }  
+}
+
+

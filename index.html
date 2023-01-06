@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div id="logo-panel">
+        <img src="odin-lined.png">
+        <p>ODIN</p>
+      </div>
+    </div>
+    <div class="content">
+      <div id="description-section"><p>This is not a real service! You know you need something like this in your life to help you realise
+        your deepest dreams.
+        <br>
+        Sign up <em>now</em> to get started.
+      </p>
+      <br>
+      <p>You <em>know</em> you want to.</p>
+      </div>
+      <div id="form-section">
+        <p>Let's do this...</p>
+        <form action="#" method="post" id="signup">
+          <div class="row">
+            <div class="input-group">
+              <label for="first-name">First Name<span aria-label="required">*</span></label>
+              <input type="text" name="first-name" id="first-name" required>
+            </div>
+            <div class="input-group">
+              <label for="last-name">last Name<span aria-label="required">*</span></label>
+              <input type="text" name="last-name" id="last-name" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email"> 
+            </div>
+            <div class="input-group">
+              <label for="phone">Phone</label>
+              <input type="tel" name="phone" id="phone">
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-group">
+              <label for="password">Password<span aria-label="required">*</span></label>
+              <input type="password" class="error" name="password" id="password" required>
+            </div>
+            <div class="input-group">
+              <label for="password-confirm">Confirm Password<span aria-label="required">*</span></label>
+              <input type="password" class="error" name="password-confirm" id="password-confirm" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="message">Passwords blank / do not match</div>
+          </div>
+        </form>
+
+      </div>
+      <div id="login-section">
+        <input type="submit" form="signup" value="Create Account" class="btn">
+        <p>Allready have an account? <a href="#">Log in</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
